@@ -5,6 +5,9 @@
 # Python 3
 
 def mult(x, y, n):
+    """
+    Fonction permettant de multiplier de très très grands nombres
+    """
     if x < 10 and y < 10 : return x*y
     else :
         n = n/2
