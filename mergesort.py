@@ -10,14 +10,7 @@ def merge(A,B):
 	j = 0
 	C = list()
 	for k in range(n):
-		if i < len(A) and j < len(B): 
-			if A[i] < B[j] :
-				C.append(A[i])
-				i = i + 1
-			else :
-				C.append(B[j])
-				j = j + 1
-		elif i < len(A) :
+		if i < len(A) and (j >= len(B) or A[i] < B[j]): 
 			C.append(A[i])
 			i = i + 1
 		else :
